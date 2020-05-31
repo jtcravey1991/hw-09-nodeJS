@@ -65,7 +65,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
-        writeToFile("README.md", answers);
+        writeToFile("newREADME.md", answers);
     })
     .catch(error => {
         console.log(error);
