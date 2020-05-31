@@ -1,13 +1,12 @@
-function generateMarkdown(data) {
-  return `
-# ${data.title}
+
+# test
 
 ## Description
 [![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](http://ForTheBadge.com)
 
 [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/)
 
-${data.description}
+undefined
 
 ## Table of Contents
 
@@ -20,29 +19,25 @@ ${data.description}
 
 ## Installation
 
-${data.installation}
+test
 
 ## Usage
 
-${data.usage}
+test
 
 ## License
 
-${data.license}
+test
 
 ## Contributing
 
-${data.contributing}
+test
 
 ## Tests
 
-${data.tests}
+test
 
 ## Questions
 
-${data.questions}
+test
 
-`;
-}
-
-module.exports = generateMarkdown;
