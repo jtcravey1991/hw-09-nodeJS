@@ -1,3 +1,4 @@
+// function that takes the data generated from inquirer and outputs a string of the markdown file in the format of a README
 function generateMarkdown(data) {
   return `
 # ${data.title}
@@ -43,5 +44,5 @@ ${data.questions}
 
 `;
 }
-
+// exports the function
 module.exports = generateMarkdown;

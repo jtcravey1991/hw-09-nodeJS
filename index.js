@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown")
 
+// array of questions for inquirer to generate data for readme
 const questions = [
     {
         type: "input",
@@ -51,6 +52,7 @@ const questions = [
     }
 ];
 
+// uses generateMarkdown custom package to save the data generated from inquirer to a markdown file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), function (error) {
         if (error) {
@@ -62,6 +64,7 @@ function writeToFile(fileName, data) {
     })
 }
 
+//initialize function
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
